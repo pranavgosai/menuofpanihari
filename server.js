@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Replace with your MongoDB Atlas connection string
-const dbUri = 'mongodb+srv://pranavgosai01:nexLAidCDDyTxpXt@cluster0.y4ep2.mongodb.net/restaurant?retryWrites=true&w=majority';
+const dbUri = 'mongodb+srv://pranavgosai01:nexLAidCDDyTxpXt@cluster0.y4ep2.mongodb.net/restaurant';
 
 mongoose.connect(dbUri, {
   useNewUrlParser: true,
