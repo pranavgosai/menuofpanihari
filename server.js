@@ -16,6 +16,7 @@ mongoose.connect(dbUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+app.use(express.json());
 
 const MenuItem = mongoose.model('MenuItem', new mongoose.Schema({
   name: String,
